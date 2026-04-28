@@ -1,0 +1,12 @@
+{
+  "name": "kicau--kyxzz-tech",
+  "version": "1.0.0",
+  "description": "Gesture tangan buat munculin video kucing joget",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+} 
