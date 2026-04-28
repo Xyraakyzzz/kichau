@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Kicau Tech Gesture | Kyxzz</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app">
+    <video id="cam" autoplay playsinline muted></video>
+    <canvas id="overlay"></canvas>
+
+    <div id="hud">
+<div class="badge" id="systemState">
+  <i class="fa-solid fa-microchip"></i> SYSTEM: IDLE
+</div>
+<div class="badge" id="palmState">
+  <i class="fa-solid fa-hand"></i> PALM: -
+</div>
+<div class="badge" id="motionState">
+  <i class="fa-solid fa-wave-square"></i> MOTION: -
+</div>
+<div class="badge" id="switchState">
+  <i class="fa-solid fa-toggle-off"></i> SWITCH: 0
+</div>
+    </div>
+
+    <div id="catLayer"></div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
